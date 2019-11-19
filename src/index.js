@@ -4,13 +4,13 @@ import './index.css';
 import BigBox from './components/BigBox';
 import * as serviceWorker from './serviceWorker';
 
-// import { Provider } from 'react-redux';
-// import store from './store';
+import { Provider } from 'react-redux';
+import store from './store/index.js';
 
 ReactDOM.render(
-  // <Provider store={store}>
+  <Provider store={store}>
     <BigBox />
-  // </Provider>
+  </Provider>
 , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
